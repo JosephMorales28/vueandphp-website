@@ -9,7 +9,9 @@
     <title>Joseph Portfolio</title>
 </head>
 <body>
-    hello world
-
+    <header>
+       <div id="app">
+          {{message}}
+    </header>
 </body>
 </html>
