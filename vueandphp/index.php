@@ -8,10 +8,15 @@
     <script src="js/app.js" defer ></script>
     <title>Joseph Portfolio</title>
 </head>
-<body>
-    <header>
+<header>
+       <div id="logo">
+          <img v-bind:src='url' alt="logo" loading="lazy" fetchpriority="high" decoding="async">
+          <h1>{{title}}</h1>
+       </div> 
        <div id="app">
           {{message}}
-    </header>
+       </div>
+</header>
+<body>
 </body>
 </html>
