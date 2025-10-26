@@ -8,6 +8,10 @@
     box-sizing: border-box;
     background-color: azure;
 }
+img {
+  pointer-events: auto;
+  user-select: none;
+}
 header{
     margin-top:-3rem;
     display: flex;
@@ -36,10 +40,10 @@ header{
     }
 }
 nav{
-    margin:3rem;
-    margin-left:-1rem;
-    padding:10px;
     #banner{
+        margin:3rem;
+        margin-left:-1rem;
+        width:100vw;
         display:flex;
         justify-content: space-between;
         padding:20px;
@@ -87,6 +91,94 @@ nav{
                 border-top-left-radius: 50%;
                 border-top-right-radius: 50%;
                 filter: grayscale(50);
+            }
+        }
+    }
+}
+body{
+    margin:0;
+    #info{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        padding:8rem;
+        width:100%;
+        #Aboutme{
+            background-color: transparent;
+            padding:1rem;
+            width:500px;
+            margin-left:3rem;
+            position:relative;
+            h1{
+                font-size: 2rem;
+                background-color: transparent;
+            }
+            p{
+                font-size: 1rem;
+                background-color: transparent;
+            }
+        }
+        #clientsAverage{
+            background-color: var(--bg-header);
+            padding:1rem;
+            margin-left:-5rem;
+            width:200px;
+            border: 0 solid transparent;
+            border-radius:10px;
+            position:relative;
+            img{
+                width: 30px;
+                height:30px;
+                background-color: transparent;
+            }
+            h1{
+                font-size: 5rem;
+                background-color: transparent;
+            }
+            p{
+                font-size: 1rem;
+                background-color: transparent;
+                margin:5px;
+                margin-bottom:1rem;
+            }
+            #profile-pic-small{
+                background-color: transparent;
+                position: absolute;
+                bottom:10px;
+                img{
+                    bottom:-150px;
+                    width:170px;
+                    height:170px;
+                    border: 0 solid transparent;
+                    border-radius:10px;
+                    filter: grayscale(50);
+                }
+            }
+        }
+        #experience{
+            background-color: transparent;
+            padding:1rem;
+            margin-left:-8rem;
+            img{
+                width:200px;
+                height:200px;
+                padding:.50rem;
+                margin-left:0rem;
+                background-color: transparent;
+                border: 0 solid transparent;
+                border-radius:20px;
+                filter: grayscale(50);
+            }
+            ul{
+                display: block;
+                margin: 0;
+                padding: 0;
+                background-color: transparent;
+               li{
+                  list-style-type: none;
+                  padding:5px;
+                  background-color: transparent;
+                }
             }
         }
     }
