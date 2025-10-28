@@ -3,6 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Joseph Morales"/>
+    <meta name="description" content= "Web Porftolio"/>
+    <meta property="og:locale" content="en-PH"/>
+    <meta name="keywords" content="My personal web portfolio and projects">
+    <meta name="author" content="Joseph Morales">
     <link rel="icon" type="image/x-icon" href="img/logo.webp">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mobile.css">
@@ -30,7 +36,10 @@
          <button>Hire Me</button>
       </div>
       <div id="profile-pic">
-         <img v-bind:src='image' :style="{ width:width ,height:height}" alt="profile-picture" loading="lazy" fetchpriority="high" decoding="async">
+         <picture>
+            <source v-bind:srcset='image' type="image/webp">
+            <img v-bind:src='image' :style="{ width:width ,height:height}" alt="profile-picture" loading="lazy" fetchpriority="high" decoding="async">
+         </picture>
       </div>
    </div>
 </nav>
