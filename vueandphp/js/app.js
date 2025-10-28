@@ -35,7 +35,7 @@ profile.mount('#profile-info');
 const profilepic=Vue.createApp({
     data (){
         return{
-            image:'img/jospeh2025.jpg',
+            image:'img/jospeh2025.webp',
             width:"400px",
             height:"400px"
         }
