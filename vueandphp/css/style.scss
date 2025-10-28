@@ -22,10 +22,11 @@ header{
     z-index:100;
     #logo{
         display: flex;
+        align-items: center;
         img{
-            width:100px;
-            height:auto;
-            padding:10px;
+            width:50px;
+            height:50px;
+            padding:5px;
         }
         h1{
             color: var(--font-color);
@@ -107,10 +108,11 @@ body{
             background-color: transparent;
             padding:1rem;
             width:500px;
-            margin-left:3rem;
+            margin-left:2rem;
             position:relative;
             h1{
                 font-size: 2rem;
+                color: var(--font-color);
                 background-color: transparent;
             }
             p{
@@ -121,7 +123,7 @@ body{
         #clientsAverage{
             background-color: var(--bg-header);
             padding:1rem;
-            margin-left:-5rem;
+            margin-left:-8rem;
             width:200px;
             border: 0 solid transparent;
             border-radius:10px;
@@ -133,6 +135,7 @@ body{
             }
             h1{
                 font-size: 5rem;
+                color: var(--font-color);
                 background-color: transparent;
             }
             p{
@@ -169,16 +172,25 @@ body{
                 border-radius:20px;
                 filter: grayscale(50);
             }
+            h1{
+                font-size: 2rem;
+                color:var(--font-color);
+                background-color: transparent;
+            }
             ul{
                 display: block;
                 margin: 0;
                 padding: 0;
                 background-color: transparent;
                li{
-                  list-style-type: none;
+                  margin:0;
                   padding:5px;
                   background-color: transparent;
                 }
+            }
+            li::marker{
+                color:var(--font-color);
+                content:disc;
             }
         }
     }
