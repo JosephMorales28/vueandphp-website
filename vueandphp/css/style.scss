@@ -1,12 +1,13 @@
 :root{
   --bg-header:#00f5d4;
+  --bg-projectspage:#f8f9fa;
   --font-color:#023e7d;
 }
 *,html{
     margin:0;
     padding:0;
     box-sizing: border-box;
-    background-color: azure;
+    background-color: #f0ffff;//azure
 }
 img {
   pointer-events: auto;
@@ -47,7 +48,7 @@ nav{
         width:100vw;
         display:flex;
         justify-content: space-between;
-        padding:20px;
+        padding:2rem;
         align-items: center;
         #profile-info{
             position:relative;
@@ -104,12 +105,12 @@ body{
         justify-content: space-between;
         padding:8rem;
         width:100%;
+        margin:0;
         #Aboutme{
             background-color: transparent;
             padding:1rem;
             width:500px;
             margin-left:2rem;
-            position:relative;
             h1{
                 font-size: 2rem;
                 color: var(--font-color);
@@ -125,6 +126,7 @@ body{
             padding:1rem;
             margin-left:-8rem;
             width:200px;
+            height:450px;
             border: 0 solid transparent;
             border-radius:10px;
             position:relative;
@@ -180,17 +182,95 @@ body{
             ul{
                 display: block;
                 margin: 0;
-                padding: 0;
+                padding: 10px;
                 background-color: transparent;
                li{
                   margin:0;
-                  padding:5px;
+                  padding:15px;
                   background-color: transparent;
+                  list-style-type:none;
+                }
+                li::before{
+                    content:counter(list-item);
+                    background-color: var(--bg-header);
+                    border:0 solid transparent;
+                    border-radius: 0 40px 25px 25px;
+                    width:50px;
+                    height:50px;
+                    padding:10px;
+                    font-size: 1rem;
+                    
                 }
             }
-            li::marker{
-                color:var(--font-color);
-                content:disc;
+        }
+    }
+    #portfoliopage{
+        background-color: var(--bg-projectspage);
+        border-top:10px solid var(--font-color);
+        #portfolioheader{
+            margin:5rem;
+            background-color: transparent;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            h1{
+                font-size: 2rem;
+                color: var(--font-color);
+                background-color:transparent;
+            }
+            p{
+                font-size: 1rem;
+                background-color: transparent;
+                color: var(--font-color);
+            }
+        }
+        #portfoliolist{
+            margin:0;
+            padding:2rem;
+            background-color: transparent;
+            ul{
+                padding:2rem;
+                background-color: transparent;
+                display: block;
+                position: relative;
+                list-style-position: inside;
+                li{
+                    padding:1rem;
+                    background-color: transparent;
+                    #portfolioitem{
+                        display: flex;
+                        justify-content:right;
+                        align-items: center;
+                        background-color: transparent;
+                        gap:30px;
+                        margin-top:-5rem;
+                        img{
+                            width:400px;
+                            height:200px;
+                            border:1px solid var(--font-color);
+                            border-radius: 15px;
+                            background-color: transparent;
+                        }
+                        p{
+                            font-size: 1rem;
+                            background-color: transparent;
+                            width:400px;
+                            code{
+                                color:var(--font-color);
+                                border:0 solid transparent;
+                                border-radius: 15px;
+                                padding:5px;
+                                background-color: var(--bg-header);
+                            }
+                        }
+                    }
+                }
+                li::marker{
+                    counter-increment:list-item;
+                    content:counter(list-item) ":";
+                    color:var(--font-color);
+                    font-size: 5rem;
+                }
             }
         }
     }
