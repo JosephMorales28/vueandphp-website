@@ -61,13 +61,15 @@
          <img src="img/josephoct.webp" alt="profile-picture" loading="lazy" fetchpriority="high" decoding="async">
          </br></br>
          <h1>Educational Background</h1>
-         <ul>
-            <li> Holy Child Catholic School - Primary School</li>
-            <li> University of the East Manila- Secondary School</li>
-            <li> University of the East Manila (CCSS) - Tertiary University</li>
-            <li> TESDA</li>
-            <li> MFI</li>
-         </ul>
+         <?php
+              $Educational=array("Holy Child Catholic School-Primary", "University of the East Manila- Secondary", "University of the East Manila (CCSS)- Tertiary", "Tesda", "MFI");
+
+              foreach ($Educational as $educ){
+                 print "<ul>";
+                 print "<li> $educ </li>";
+                 print "</ul>";
+              }
+         ?>
       </div>
    </div>
    <div id="portfoliopage">
@@ -85,7 +87,8 @@
    </div>
 </body>
 <section>
-   Hello word!
+   <h1>Do you a vision? lets bring it live on browser?</h1>
+   <p>Im always excited to collaborate on new and innovative projects. Whether you're starting form scratch refining an existing idea.</p>
 </section>
 <article>
    This is my article
