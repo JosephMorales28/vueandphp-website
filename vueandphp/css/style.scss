@@ -186,7 +186,7 @@ body{
                 background-color: transparent;
                li{
                   margin:0;
-                  padding:15px;
+                  padding:10px;
                   background-color: transparent;
                   list-style-type:none;
                 }
@@ -273,5 +273,18 @@ body{
                 }
             }
         }
+    }
+}
+section{
+    border:1px solid black;
+    margin:0 auto;
+    padding:5rem;
+    h1{
+        font-size: 2rem;
+        color:var(--font-color);
+    }
+    p{
+        font-size: 1rem;
+        color:var(--font-color);
     }
 }
