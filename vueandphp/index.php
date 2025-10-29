@@ -43,13 +43,13 @@
       </div>
    </div>
 </nav>
-<body>
+<body oncontextmenu="return false;" ondragstart="return false;" onselectstart="return false;">
    <div id="info">
       <div id="Aboutme">
          <h1>{{title}}</h1>
          <p>{{paragraph}}</br></br>{{paragraphtwo}}</br></br>{{paragraphthree}}</p>
       </div>
-      <div id="clientsAverage">
+      <div id="clientsAverage" oncontextmenu="return false;">
          <img src="img/increase calendar copy.png" alt="clients-icon" loading ="lazy" fetchpriority="high" decoding="async">
          <h1>50+</h1>
          <p>Average increase in clients engagement in the first 6 months.</p></br></br>
@@ -62,16 +62,35 @@
          </br></br>
          <h1>Educational Background</h1>
          <ul>
-            <li>Holy Child Catholic School - Primary School</li>
-            <li>University of the East Manila- Secondary School</li>
-            <li>University of the East Manila (CCSS) - Tertiary University</li>
-            <li>TESDA</li>
-            <li>MFI</li>
+            <li> Holy Child Catholic School - Primary School</li>
+            <li> University of the East Manila- Secondary School</li>
+            <li> University of the East Manila (CCSS) - Tertiary University</li>
+            <li> TESDA</li>
+            <li> MFI</li>
          </ul>
       </div>
    </div>
-   <div id="projects">
-        Projects
+   <div id="portfoliopage">
+        <div id="portfolioheader">
+           <h1>Projects</h1>
+           <p>Here are some of my recent works</p>
+        </div>
+        <div id="portfoliolist">
+            <ul>
+               <li><div id="portfolioitem"><img src="img/sample.jpg" alt="mountains" loading="lazy" fetchpriority="high" decoding="async"><p>description:</br></br>mountains</p><p>programming language use </br></br><code>SCSS</code> <code>Vue</code> <code>php</code></p></div></li>
+               <li><div id="portfolioitem"><img src="img/sample.jpg" alt="mountains" loading="lazy" fetchpriority="high" decoding="async"><p>description:</br></br>mountains Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quod eligendi atque sed dolores, tenetur dolorem mollitia blanditiis reiciendis velit iure excepturi at fugiat optio qui assumenda, iusto eveniet reprehenderit?</p><p>programming language use </br></br><code>SCSS</code> <code>Vue</code> <code>php</code></p></div></li>
+               <li><div id="portfolioitem"><img src="img/sample.jpg" alt="mountains" loading="lazy" fetchpriority="high" decoding="async"><p>description:</br></br>mountains</p><p>programming language use </br></br><code>SCSS</code> <code>Vue</code> <code>php</code></p></div></li>
+            </ul>
+        </div>
    </div>
 </body>
+<section>
+   Hello word!
+</section>
+<article>
+   This is my article
+</article>
+<footer>
+   &copy; 2025 Joseph Morales. All rights reserved.
+</footer>
 </html>
