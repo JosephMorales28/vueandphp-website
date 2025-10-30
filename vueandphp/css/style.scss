@@ -1,13 +1,9 @@
-:root{
-  --bg-header:#00f5d4;
-  --bg-projectspage:#eeeaea;
-  --font-color:#023e7d;
-}
+@use "scss/colors" as c;
 *,html{
     margin:0;
     padding:0;
     box-sizing: border-box;
-    background-color: #f0ffff;//azure
+    background-color: c.$purewhite;//azure
 }
 img {
   pointer-events: auto;
@@ -30,14 +26,14 @@ header{
             padding:5px;
         }
         h1{
-            color: var(--font-color);
+            color: c.$darkblue;
             font-size: 2rem;
         }
     }
     #app{
     margin:0;
     padding:10px;
-    color:var(--font-color);
+    color:c.$darkblue;
     font-size: 2rem;
     }
 }
@@ -58,18 +54,18 @@ nav{
                 margin-bottom:20px;
             }
             p{
-                color:var(--font-color);
+                color:c.$darkblue;
                 font-weight: bold;
                 font-size: 2.75rem;
             }
             code{
-                color:var(--font-color);
+                color:c.$darkblue;
                 border:0 solid transparent;
                 border-radius:5px;
                 margin-top:15px;
                 padding:5px;
                 font-size: 1rem;
-                background-color: var(--bg-header);
+                background-color: c.$lightgreen;
             }
             #bio{
                 margin-top:20px;
@@ -79,8 +75,8 @@ nav{
                 font-size:1rem;
                 border:0 solid transparent;
                 border-radius: 5px;
-                color:var(--font-color);
-                background-color: var(--bg-header);
+                color:c.$darkblue;
+                background-color: c.$lightgreen;
                 width:250px;
             }
         }
@@ -113,7 +109,7 @@ body{
             margin-left:2rem;
             h1{
                 font-size: 2rem;
-                color: var(--font-color);
+                color: c.$darkblue;
                 background-color: transparent;
             }
             p{
@@ -122,7 +118,7 @@ body{
             }
         }
         #clientsAverage{
-            background-color: var(--bg-header);
+            background-color: c.$lightgreen;
             padding:1rem;
             margin-left:-8rem;
             width:200px;
@@ -137,7 +133,7 @@ body{
             }
             h1{
                 font-size: 5rem;
-                color: var(--font-color);
+                color: c.$darkblue;
                 background-color: transparent;
             }
             p{
@@ -176,7 +172,7 @@ body{
             }
             h1{
                 font-size: 2rem;
-                color:var(--font-color);
+                color:c.$darkblue;
                 background-color: transparent;
             }
             ul{
@@ -192,7 +188,7 @@ body{
                 }
                 li::before{
                     content:counter(list-item);
-                    background-color: var(--bg-header);
+                    background-color: c.$lightgreen;
                     border:0 solid transparent;
                     border-radius: 0 40px 25px 25px;
                     width:50px;
@@ -205,8 +201,8 @@ body{
         }
     }
     #portfoliopage{
-        background-color: var(--bg-projectspage);
-        border-top:10px solid var(--font-color);
+        background-color: c.$lightgray;
+        border-top:10px solid c.$darkblue;
         #portfolioheader{
             margin:5rem;
             background-color: transparent;
@@ -215,13 +211,13 @@ body{
             align-items: center;
             h1{
                 font-size: 2rem;
-                color: var(--font-color);
+                color: c.$darkblue;
                 background-color:transparent;
             }
             p{
                 font-size: 1rem;
                 background-color: transparent;
-                color: var(--font-color);
+                color: c.$darkblue;
             }
         }
         #portfoliolist{
@@ -247,7 +243,7 @@ body{
                         img{
                             width:400px;
                             height:200px;
-                            border:1px solid var(--font-color);
+                            border:1px solid c.$darkblue;
                             border-radius: 15px;
                             background-color: transparent;
                         }
@@ -256,11 +252,11 @@ body{
                             background-color: transparent;
                             width:400px;
                             code{
-                                color:var(--font-color);
+                                color:c.$darkblue;
                                 border:0 solid transparent;
                                 border-radius: 15px;
                                 padding:5px;
-                                background-color: var(--bg-header);
+                                background-color: c.$lightgreen;
                             }
                         }
                     }
@@ -268,7 +264,7 @@ body{
                 li::marker{
                     counter-increment:list-item;
                     content:counter(list-item) ":";
-                    color:var(--font-color);
+                    color:c.$darkblue;
                     font-size: 5rem;
                 }
             }
@@ -278,16 +274,16 @@ body{
 section{
     margin:0 auto;
     padding:5rem;
-    background-color: #eeeaea;
+    background-color:c.$lightgray;
     h1{
         font-size: 3rem;
-        color:var(--font-color);
+        color:c.$darkblue;
         text-align: center;
         background-color: transparent;
     }
     p{
         font-size: 1rem;
-        color:var(--font-color);
+        color:c.$darkblue;
         text-align: center;
         background-color: transparent;
     }
