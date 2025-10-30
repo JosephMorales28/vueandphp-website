@@ -1,5 +1,4 @@
 console.log(' Hello Vue 3');
-
 const logo=Vue.createApp({
     data (){
         return{
@@ -35,6 +34,7 @@ profile.mount('#profile-info');
 const profilepic=Vue.createApp({
     data (){
         return{
+            imagejpg:'img/jospeh2025.jpg',
             image:'img/jospeh2025.webp',
             width:"400px",
             height:"400px"
@@ -54,3 +54,23 @@ const about=Vue.createApp({
     }
 })
 about.mount('#Aboutme');
+
+const educ=Vue.createApp({
+    data(){
+        return{
+            image:'img/josephoct.webp',
+            h1:'Educational bacground'
+        }
+    }
+})
+educ.mount('#experience');
+
+const section=Vue.createApp({
+    data(){
+        return{
+            heading:"Do you a vision? lets bring it live on browser?",
+            paragraph:"Im always excited to collaborate on new and innovative projects. Whether you're starting form scratch refining an existing idea."
+        }
+    }
+})
+section.mount("#sectionone");
