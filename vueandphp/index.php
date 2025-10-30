@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-PH">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,13 +12,19 @@
     <link rel="icon" type="image/x-icon" href="img/logo.webp">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mobile.css">
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="preload" href="js/app.js" as="script">
+    <!--<link rel="preload" href="js/vue.js" as="script">i copy the original link of vue.global.js because in devtool said need to minify javascript so i create another file vue.js and minify it,  you can use this <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> but this script is not minify-->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="js/app.js" defer ></script>
     <title>Joseph Portfolio</title>
 </head>
 <header oncontextmenu="return false;">
        <div id="logo">
-          <img v-bind:src="image" alt="logo" loading="lazy" fetchpriority="high" decoding="async">
+          <picture>
+             <source v-bind:srcset="image" type="image/webp">
+                <img v-bind:src="image" alt="logo" loading="lazy" fetchpriority="high" decoding="async">
+          </picture>
           <h1>{{title}}</h1>
        </div> 
        <div id="app">
@@ -57,10 +63,14 @@
             <img src="img/josephoct.webp" alt="profile-picture" loading="lazy" fetchpriority="high" decoding="async">
          </div>
       </div>
-      <div id="experience">
-         <img src="img/josephoct.webp" alt="profile-picture" loading="lazy" fetchpriority="high" decoding="async">
+      <div id="experience" oncontextmenu="return false;">
+         <picture>
+            <source v-bind:srcset="image" type="image/webp">
+               <img v-bind:src="image" alt="profile-picture" loading="lazy" fetchpriority="high" decoding="async">
+            </source>
+         <picture>
          </br></br>
-         <h1>Educational Background</h1>
+         <h1>{{h1}}</h1>
          <?php
               $Educational=array("Holy Child Catholic School-Primary", "University of the East Manila- Secondary", "University of the East Manila (CCSS)- Tertiary", "Tesda", "MFI");
 
@@ -86,9 +96,9 @@
         </div>
    </div>
 </body>
-<section>
-   <h1>Do you a vision? lets bring it live on browser?</h1>
-   <p>Im always excited to collaborate on new and innovative projects. Whether you're starting form scratch refining an existing idea.</p>
+<section id="sectionone">
+   <h1>{{heading}}</h1>
+   <p>{{paragraph}}</p>
 </section>
 <article>
    This is my article
