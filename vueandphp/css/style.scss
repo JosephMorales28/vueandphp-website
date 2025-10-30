@@ -1,6 +1,6 @@
 :root{
   --bg-header:#00f5d4;
-  --bg-projectspage:#f8f9fa;
+  --bg-projectspage:#eeeaea;
   --font-color:#023e7d;
 }
 *,html{
@@ -276,15 +276,19 @@ body{
     }
 }
 section{
-    border:1px solid black;
     margin:0 auto;
     padding:5rem;
+    background-color: #eeeaea;
     h1{
-        font-size: 2rem;
+        font-size: 3rem;
         color:var(--font-color);
+        text-align: center;
+        background-color: transparent;
     }
     p{
         font-size: 1rem;
         color:var(--font-color);
+        text-align: center;
+        background-color: transparent;
     }
 }
