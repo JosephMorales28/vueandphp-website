@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'BitcountGridSingle_Roman-Light';
+    src: url('../fonts/BitcountGridSingle_Roman-Light.woff') format(woff);
+    font-weight: 300;
+    font-style: normal;
+    font-dispplay: swap;
+}
+
+@mixin font-900{
+     font-family: 'BitcountGridSingle_Roman-Light', sans-serif;
+     font-weight: 900;
+}
+@mixin font-normal{
+    font-family: 'BitcountGridSingle_Roman-Light',sans-serif;
+    font-weight: 300;
+}
