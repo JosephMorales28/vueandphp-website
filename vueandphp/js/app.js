@@ -59,7 +59,7 @@ const educ=Vue.createApp({
     data(){
         return{
             image:'img/josephoct.webp',
-            h1:'Educational bacground'
+            h1:'Educational background'
         }
     }
 })
@@ -68,7 +68,7 @@ educ.mount('#experience');
 const section=Vue.createApp({
     data(){
         return{
-            heading:"Do you a vision? lets bring it live on browser?",
+            heading:"Do you have a vision? lets bring it live on browser?",
             paragraph:"Im always excited to collaborate on new and innovative projects. Whether you're starting form scratch refining an existing idea."
         }
     }
