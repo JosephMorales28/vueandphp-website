@@ -13,7 +13,9 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mobile.css">
     <link rel="preload" href="css/style.css" as="style">
+    <link rel="preload" href="fonts/BitcountGridSingle_Roman-Light.woff" as="font" type="font/woff" crossorigin="anonymous">
     <link rel="preload" href="js/app.js" as="script">
+    <linl rel="preconnect" href="http://localhost/vueandphp/">
     <!--<link rel="preload" href="js/vue.js" as="script">i copy the original link of vue.global.js because in devtool said need to minify javascript so i create another file vue.js and minify it,  you can use this <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> but this script is not minify-->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="js/app.js" defer ></script>
