@@ -30,7 +30,7 @@
           <h1>{{title}}</h1>
        </div> 
        <div id="app">
-          {{message}}
+          <button>{{message}}</button>
        </div>
 </header>
 <nav oncontextmenu="return false;">
@@ -98,14 +98,10 @@
         </div>
    </div>
 </body>
-<section id="sectionone">
-   <h1>{{heading}}</h1>
-   <p>{{paragraph}}</p>
-</section>
-<article>
-   This is my article
-</article>
 <footer>
-   &copy; 2025 Joseph Morales. All rights reserved.
+   <p>&copy; {{paragraph}}</p>
+   <ul>
+      <li v-for="socialmedia in list">{{socialmedia}}</li>
+   </ul>
 </footer>
 </html>
