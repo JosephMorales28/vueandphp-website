@@ -28,6 +28,7 @@ header{
             padding:5px;
         }
         h1{
+            @include f.font-900;
             color: c.$darkblue;
             font-size: 2rem;
         }
@@ -37,6 +38,15 @@ header{
     padding:10px;
     color:c.$darkblue;
     font-size: 2rem;
+    button{
+        padding:10px;
+        @include f.font-900;
+        font-size:1rem;
+        border:1px solid c.$darkblue;
+        border-radius:5px;
+        color:c.$darkblue;
+        background-color: c.$lightgreen;
+    }
     }
 }
 nav{
@@ -71,6 +81,12 @@ nav{
             }
             #bio{
                 margin-top:20px;
+                p{
+                    @include f.font-montserrat;
+                    font-size: 1rem;
+                    color:c.$darkblue;
+                    background-color: transparent;
+                }
             }
             button{
                 padding:10px;
@@ -116,7 +132,7 @@ body{
                 background-color: transparent;
             }
             p{
-                @include f.font-normal;
+                @include f.font-montserrat;
                 font-size: 1rem;
                 background-color: transparent;
             }
@@ -209,9 +225,8 @@ body{
     }
     #portfoliopage{
         background-color: c.$lightgray;
-        border-top:10px solid c.$darkblue;
         #portfolioheader{
-            margin:5rem;
+            padding:5rem;
             background-color: transparent;
             display: flex;
             justify-content: space-between;
@@ -230,7 +245,6 @@ body{
         }
         #portfoliolist{
             margin:0;
-            padding:2rem;
             background-color: transparent;
             ul{
                 padding:2rem;
@@ -291,9 +305,35 @@ section{
         background-color: transparent;
     }
     p{
+        @include f.font-montserrat;
         font-size: 1rem;
         color:c.$darkblue;
         text-align: center;
         background-color: transparent;
+    }
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    margin:0;
+    padding:2rem;
+    background-color: c.$darkblue;
+    color:c.$purewhite;
+    p{
+        @include f.font-montserrat;
+        font-size: 1rem;
+        background-color: transparent;
+    }
+    ul{
+        background-color: transparent;
+       li{
+        display: inline;
+        list-style-type: none;
+        background-color: transparent;
+        padding:5px;
+        color: c.$purewhite;
+        @include f.font-montserrat;
+        font-size: 1rem;
+       }
     }
 }
