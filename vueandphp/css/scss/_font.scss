@@ -5,6 +5,13 @@
     font-style: normal;
     font-dispplay: swap;
 }
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('../fonts/Montserrat-Regular.woff') format(woff);
+    font-weight:400;
+    font-style: normal;
+    font-display:swap;
+}
 
 @mixin font-900{
      font-family: 'BitcountGridSingle_Roman-Light', sans-serif;
@@ -13,4 +20,8 @@
 @mixin font-normal{
     font-family: 'BitcountGridSingle_Roman-Light',sans-serif;
     font-weight: 300;
+}
+@mixin font-montserrat{
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-weight: 400;
 }
