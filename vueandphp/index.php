@@ -106,7 +106,8 @@
 <footer>
    <p>&copy; {{paragraph}}</p>
    <ul>
-      <li><img v-for="socialmedia in image" v-for="socialmedianame in list" v-bind:src="socialmedia" alt="socialmedianame" loading="lazy" fetchpriority="high" decoding="async"></li>
+      <li><img v-for="(socialmedia, index) in image" :key=index v-bind:src="socialmedia" :alt="list[index]" loading="lazy" fetchpriority="high" decoding="async"></li>
    </ul>
 </footer>
 </html>
+
