@@ -30,6 +30,7 @@
           <h1>{{title}}</h1>
        </div> 
        <div id="app">
+          <div id="blog"><p>{{blog}}</p></div>
           <button>{{message}}</button>
        </div>
 </header>
@@ -101,7 +102,7 @@
 <footer>
    <p>&copy; {{paragraph}}</p>
    <ul>
-      <li v-for="socialmedia in list">{{socialmedia}}</li>
+      <li v-bind:src="image">{{socialmedia}}</li>
    </ul>
 </footer>
 </html>
