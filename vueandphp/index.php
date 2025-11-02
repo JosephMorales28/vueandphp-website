@@ -99,10 +99,14 @@
         </div>
    </div>
 </body>
+<section id="sectionone">
+<h1>{{heading}}</h1>
+<p>{{paragraph}}</p>            
+</section>
 <footer>
    <p>&copy; {{paragraph}}</p>
    <ul>
-      <li v-bind:src="image">{{socialmedia}}</li>
+      <li><img v-for="socialmedia in image" v-for="socialmedianame in list" v-bind:src="socialmedia" alt="socialmedianame" loading="lazy" fetchpriority="high" decoding="async"></li>
    </ul>
 </footer>
 </html>
