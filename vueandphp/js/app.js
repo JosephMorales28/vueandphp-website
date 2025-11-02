@@ -12,7 +12,8 @@ logo.mount('#logo');
 const app = Vue.createApp({
     data (){
         return{
-            message: 'Hire Me'
+            message: 'Hire Me',
+            blog:'Blog'
         }
     }
 })
@@ -79,7 +80,8 @@ const footer=Vue.createApp({
     data(){
         return{
             paragraph:" 2025 Joseph Morales. All rights reserved.",
-            list:["Facebook","Instagram","Github","Behance","Threads"]
+            list:["facebook","Instagram","Github","Behance","Threads"],
+            image:["img/icons/icons-facebook.png","img/icons/icons-facebook.png","img/icons/icons-facebook.png","img/icons/icons-facebook.png","img/icons/icons-facebook.png"]
         }
     }
 })
