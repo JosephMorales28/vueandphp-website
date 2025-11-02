@@ -81,7 +81,7 @@ const footer=Vue.createApp({
         return{
             paragraph:" 2025 Joseph Morales. All rights reserved.",
             list:["facebook","Instagram","Github","Behance","Threads"],
-            image:["img/icons/icons-facebook.png","img/icons/icons-facebook.png","img/icons/icons-facebook.png","img/icons/icons-facebook.png","img/icons/icons-facebook.png"]
+            image:["img/icons/icons8-facebook-50.png","img/icons/icons8-instagram-50.png","img/icons/icons8-github-50.png","img/icons/icons8-behance-50.png","img/icons/icons8-threads-50.png"]
         }
     }
 })
