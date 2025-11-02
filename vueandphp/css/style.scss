@@ -34,19 +34,32 @@ header{
         }
     }
     #app{
-    margin:0;
-    padding:10px;
-    color:c.$darkblue;
-    font-size: 2rem;
-    button{
-        padding:10px;
-        @include f.font-900;
-        font-size:1rem;
-        border:1px solid c.$darkblue;
-        border-radius:5px;
-        color:c.$darkblue;
-        background-color: c.$lightgreen;
-    }
+       margin:0;
+       padding:10px;
+       color:c.$darkblue;
+       font-size: 2rem;
+       display:flex;
+       align-items: center;
+       justify-content: space-between;
+       #blog{
+           background-color: transparent;
+           position:relative;
+           left:-2rem;
+           p{
+               @include f.font-900;
+               font-size: 1.5rem;
+               background-color: transparent;
+           }
+       }
+       button{
+           padding:5px;
+           @include f.font-900;
+           font-size:1.5rem;
+           border:1px solid c.$darkblue;
+           border-radius:5px;
+           color:c.$darkblue;
+           background-color: c.$lightgreen;
+        }
     }
 }
 nav{
@@ -334,6 +347,11 @@ footer{
         color: c.$purewhite;
         @include f.font-montserrat;
         font-size: 1rem;
+        img{
+            width:50px;
+            height:50px;
+            background-color: transparent;
+        }
        }
     }
 }
