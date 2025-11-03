@@ -32,10 +32,38 @@
       </div>
    </header>
    <nav>
-        <div id="blog">
+         <div id="blog">
             <h1>{{blog}}</h1>
             <h2>{{headingtwo}}</h2>
-        </div>
+
+            <div id="blog-creator">
+               <picture>
+                     <source srcset="img/josephoct.webp" type="image/webp">   
+                     <img v-bind:src="imagetwo" alt="joseph morales blog picture" loading="lazy" fetchpriority="high" decoding="async">
+               </picture>
+               <div id="blog-create">
+                  <h1>by. Joseph Morales</h1>
+                  <p>{{datecreate}}</p>
+               </div>
+            </div>
+            <div id="blog-content">
+               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia voluptate nesciunt natus totam, laborum ratione rerum ab, tenetur autem doloremque magnam cumque. In modi dolores qui veritatis! Nobis, quia ipsum.</p>        
+            </div>
+            
+            <div id="blog-creator">
+               <picture>
+                     <source srcset="img/josephoct.webp" type="image/webp">   
+                     <img v-bind:src="imagetwo" alt="joseph morales blog picture" loading="lazy" fetchpriority="high" decoding="async">
+               </picture>
+               <div id="blog-create">
+                  <h1>by. Joseph Morales</h1>
+                  <p>{{datecreate}}</p>
+               </div>
+            </div>
+            <div id="blog-content">
+               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia voluptate nesciunt natus totam, laborum ratione rerum ab, tenetur autem doloremque magnam cumque. In modi dolores qui veritatis! Nobis, quia ipsum.</p>        
+            </div>
+         </div>
    </nav>
 </body>
 <footer>
