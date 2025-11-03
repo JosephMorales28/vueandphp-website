@@ -19,7 +19,10 @@ const profile=Vue.createApp({
             message:"A passionate Web Developer and Graphic Designer dedicated to crafting visually stunning and user-friendly digital experiences.",
             blog:"Welcome to my Blog",
             headingtwo:"Whats new in my web portfolio?",
-            image:'img/jospeh2025.webp'
+            image:'img/jospeh2025.webp',
+            imagetwo:'img/josephoct.webp',
+            datecreate:"November 3, 2025"
+
         }
     }
 })
