@@ -3,46 +3,27 @@ const logo=Vue.createApp({
     data (){
         return{
             image:"img/logo.webp",
-            title: 'Joseph Morales'
+            title: 'Joseph Morales',
+            message:'Blog',
+            button:'Hire Me'
         }
     }
 })
-logo.mount('#logo');
-
-const app = Vue.createApp({
-    data (){
-        return{
-            message: 'Hire Me',
-            blog:'Blog'
-        }
-    }
-})
-app.mount('#app');
+logo.mount('header');
 
 const profile=Vue.createApp({
     data (){
         return{
             name:" I'm Joseph Morales",
-            size:"1rem",
-            width:"500px",
             skills:" Web Developer | Graphic Designer",
-            message:"A passionate Web Developer and Graphic Designer dedicated to crafting visually stunning and user-friendly digital experiences."
+            message:"A passionate Web Developer and Graphic Designer dedicated to crafting visually stunning and user-friendly digital experiences.",
+            blog:"Welcome to my Blog",
+            headingtwo:"Whats new in my web portfolio?",
+            image:'img/jospeh2025.webp'
         }
     }
 })
-profile.mount('#profile-info');
-
-const profilepic=Vue.createApp({
-    data (){
-        return{
-            imagejpg:'img/jospeh2025.jpg',
-            image:'img/jospeh2025.webp',
-            width:"400px",
-            height:"400px"
-        }
-    }
-})
-profilepic.mount('#profile-pic');
+profile.mount('nav');
 
 const about=Vue.createApp({
     data (){
@@ -54,7 +35,7 @@ const about=Vue.createApp({
         }
     }
 })
-about.mount('#Aboutme');
+about.mount("section");
 
 const educ=Vue.createApp({
     data(){
