@@ -132,6 +132,55 @@ body{
                 font-weight: 400;
                 color: c.$darkblue;
             }
+            #blog-creator{
+                display: flex;
+                justify-content:flex-start;
+                align-items: center;
+                gap:20px;
+                background-color: c.$blogbg;
+                border: 2px solid c.$lightgreen;
+                border-radius:5px;
+                margin-top: 1rem;
+                padding:5px;
+                width:fit-content;
+                img{
+                   width:50px;
+                   height:50px;
+                   border:0 solid transparent;
+                   border-radius: 100%;
+                   background-color: transparent;
+                }
+                #blog-create{
+                    background-color: transparent;
+                    h1{
+                        @include f.font-900;
+                        font-size: 1rem;
+                        font-weight: 900;
+                        color: c.$darkblue;
+                        background-color: transparent;
+                    }
+                    p{
+                       @include f.font-montserrat;
+                       font-size:.75rem;
+                       font-weight: 400;                
+                       color: c.$darkblue;
+                       background-color: transparent;
+                       margin-top: 0;
+                    }
+                }
+            }
+            #blog-content{
+                margin-top:1rem;
+                p{
+                    @include f.font-montserrat;
+                    font-size: 1rem;
+                    font-weight: 400;
+                    color: c.$darkblue;
+                    background-color: transparent;
+                    margin-top:1rem;
+                    width:900px;
+                }
+            }
         }    
     }
     section{
