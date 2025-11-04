@@ -5,7 +5,6 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
-    background-color: c.$purewhite;//azure
 }
 img {
   pointer-events: auto;
@@ -14,6 +13,7 @@ img {
 body{
     margin :0;
     padding:0px;
+    background-color: c.$purewhite;
     header{
         background-color: none;
         display:flex;
@@ -201,6 +201,7 @@ body{
                     font-size: 2rem;
                     font-weight: 900;
                     color:c.$darkblue;
+                    background-color: transparent;
                 }
                 p{
                     @include f.font-montserrat;
@@ -209,6 +210,7 @@ body{
                     color: c.$darkblue;
                     width:500px;
                     padding-top:1rem;
+                    background-color: transparent;
                 }
             }
             #about-content{
@@ -221,7 +223,7 @@ body{
                 img{
                     width:25px;
                     height:25px;
-                    background-color: transparent;
+                    background-color: transparent !important;
                 }
                 h1{
                     @include f.font-900;
@@ -239,12 +241,12 @@ body{
                     bottom:0;
                     background-color: transparent;
                     img{
-                        padding:5px;
+                        margin-top:1rem;
                         width:150px;
                         height:150px;
                         border: 0 solid transparent;
                         border-radius: 15px;
-                        background-color: transparent;
+                        background-color: transparent !important;
                     }
                 }
             }
