@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:type" content="website"/>
     <meta property="og:title" content="Joseph Morales"/>
-    <meta name="description" content= "Web Porftolio"/>
+    <meta name="description" content= "Web Portfolio"/>
     <meta property="og:locale" content="en-PH"/>
     <meta name="keywords" content="My personal web portfolio and projects">
     <meta name="author" content="Joseph Morales">
@@ -25,10 +25,10 @@
    <header>
       <div id="logo">
          <picture>
-            <source srcset="img/logo.webp" type="image/webp">
-               <img v-bind:src="image" alt="logo" loading="lazy" fetchpriority="high" decoding="async">
+            <source v-bind:srcset="logoImage" type="image/webp">
+               <img v-bind:src="logoImage" alt="logo" loading="lazy" fetchpriority="high" decoding="async">
          </picture>
-         <h1>{{message}}</h1>
+         <h1>{{headerBlog}}</h1>
       </div>
    </header>
    <nav>
@@ -67,9 +67,9 @@
    </nav>
 </body>
 <footer>
-   <p>&copy; {{paragraph}}</p>
+   <p>&copy; {{footerparagraph}}</p>
    <ul>
-      <li><img v-for="(socialmedia, index) in image" :key="index" v-bind:src="socialmedia" :alt="list[index]" loading="lazy" fetchpriority="high" decoding="async"></li>
+      <li><img v-for="(icon, index) in imagesocial" :key="index" v-bind:src="icon" :alt="list[index]" loading="lazy" fetchpriority="high" decoding="async"></li>
    </ul>
 </footer>
 </html>
