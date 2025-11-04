@@ -2,10 +2,10 @@ console.log(' Hello Vue 3');
 const logo=Vue.createApp({
     data (){
         return{
-            image:"img/logo.webp",
-            title: 'Joseph Morales',
-            message:'Blog',
-            button:'Hire Me'
+            logoImage:"img/logo.webp",
+            logoTitle: 'Joseph Morales',
+            headerBlog:'Blog',
+            headerButton:'Hire Me'
         }
     }
 })
@@ -31,7 +31,9 @@ profile.mount('nav');
 const about=Vue.createApp({
     data (){
         return{
-            title:"About Me",
+            imagepng:"img/increasecalendar.png",
+            imagewebp:"img/josephoct.webp",
+            sectionTitle:"About Me",
             paragraph:"Im a web developer with experience in creating dynamic and responsive websites. I specialize in front-end development using HTML, CSS, Vue.js, and Javascript.",
             paragraphtwo:"I have a strong understanding of user experience and design principles, and I am passionate about creating visually appealing and user-friendly websites.",
             paragraphthree:"I am also familiar with back-end development using PHP and MySQL, allowing me to create full stack web applications. I am constantly learning and staying up to date with the latest web development trends and technologies to ensure that my skills are always current."
@@ -39,16 +41,6 @@ const about=Vue.createApp({
     }
 })
 about.mount("section");
-
-const educ=Vue.createApp({
-    data(){
-        return{
-            image:'img/josephoct.webp',
-            h1:'Educational background'
-        }
-    }
-})
-educ.mount('#experience');
 
 const section=Vue.createApp({
     data(){
@@ -58,14 +50,14 @@ const section=Vue.createApp({
         }
     }
 })
-section.mount("#sectionone");
+section.mount("aside");
 
 const footer=Vue.createApp({
     data(){
         return{
-            paragraph:" 2025 Joseph Morales. All rights reserved.",
+            footerparagraph:" 2025 Joseph Morales. All rights reserved.",
             list:["facebook","Instagram","Github","Behance","Threads"],
-            image:["img/icons/icons8-facebook-50.webp","img/icons/icons8-instagram-50.webp","img/icons/icons8-github-50.webp","img/icons/icons8-behance-50.webp","img/icons/icons8-threads-50.webp"]
+            imagesocial:["img/icons/icons8-facebook-50.webp","img/icons/icons8-instagram-50.webp","img/icons/icons8-github-50.webp","img/icons/icons8-behance-50.webp","img/icons/icons8-threads-50.webp"]
         }
     }
 })
