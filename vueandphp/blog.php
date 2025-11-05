@@ -47,17 +47,21 @@
                </div>
             </div>
             <div id="blog-content">
-               <picture>
-                  <source srcset="img/blog.webp" type="image/webp">
-                  <img src="img/blog.webp" alt="blog image" loading="lazy" fetchpriority="high" decoding="async">
+               <figure>
+                  <picture>
+                     <source v-bind:srcset="imagethree" type="image/webp">
+                        <img v-bind:src="imagethree" alt="blog image" loading="lazy" fetchpriority="high" decoding="async">
+                  </picture>
                   <figcaption>Image Credit: Joseph Morales</figcaption>
-               </picture>
-               <p>This first image has no animation header menu.</p>        
-               <picture>
-                  <source srcset="img/blog2.webp" type="image/webp">
-                  <img src="img/blog2.webp" alt="blog image" loading="lazy" fetchpriority="high" decoding="async">
+               </figure>
+               <p>This first image has no animation header menu.</p>  
+               <figure>      
+                  <picture>
+                     <source v-bind:srcset="imagefour" type="image/webp">
+                        <img v-bind:src="imagefour" alt="blog image" loading="lazy" fetchpriority="high" decoding="async">
+                  </picture>
                   <figcaption>Image Credit: Joseph Morales</figcaption>
-               </picture>
+               </figure>
                <p>This second image has an animation header menu when you scroll down.</p>
             </div>
             
