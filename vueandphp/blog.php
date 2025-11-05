@@ -43,11 +43,22 @@
                </picture>
                <div id="blog-create">
                   <h1>by. Joseph Morales</h1>
-                  <p>{{datecreate}}</p>
+                  <p>November 5,2025</p>
                </div>
             </div>
             <div id="blog-content">
-               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia voluptate nesciunt natus totam, laborum ratione rerum ab, tenetur autem doloremque magnam cumque. In modi dolores qui veritatis! Nobis, quia ipsum.</p>        
+               <picture>
+                  <source srcset="img/blog.webp" type="image/webp">
+                  <img src="img/blog.webp" alt="blog image" loading="lazy" fetchpriority="high" decoding="async">
+                  <figcaption>Image Credit: Joseph Morales</figcaption>
+               </picture>
+               <p>This first image has no animation header menu.</p>        
+               <picture>
+                  <source srcset="img/blog2.webp" type="image/webp">
+                  <img src="img/blog2.webp" alt="blog image" loading="lazy" fetchpriority="high" decoding="async">
+                  <figcaption>Image Credit: Joseph Morales</figcaption>
+               </picture>
+               <p>This second image has an animation header menu when you scroll down.</p>
             </div>
             
             <div id="blog-creator">
