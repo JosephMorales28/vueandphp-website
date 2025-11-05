@@ -190,13 +190,20 @@ body{
             }
             #blog-content{
                 margin-top:1rem;
+                img{
+                    width:900px;
+                    height:457px;
+                    border:1px solid c.$darkblue;
+                    border-radius: 10px;
+                    background-color: transparent;
+                }
                 p{
                     @include f.font-montserrat;
                     font-size: 1rem;
                     font-weight: 400;
                     color: c.$darkblue;
                     background-color: transparent;
-                    margin-top:1rem;
+                    margin:1rem 0 1rem 0;
                     width:900px;
                 }
             }
