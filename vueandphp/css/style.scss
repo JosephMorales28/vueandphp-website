@@ -24,6 +24,8 @@ body{
         width:100%;
         z-index: 1000;
         top:0;
+        animation: menubar 0.5s ease-in-out;
+        animation-timeline: scroll();
         #logo{
             display:flex;
             justify-content: space-between;
@@ -59,9 +61,26 @@ body{
                 border:0 solid transparent;
                 border-radius: 5px;
                 background-color: c.$lightgreen;
+                animation: buttonheader 0.5s ease-in-out;
+                animation-timeline: scroll();;
             }
         }
     }
+    @keyframes menubar {
+        0%{
+            background-color: transparent;
+        }
+        15%,100%{
+            background-color: c.$lightgreen;
+        }
+    }
+    @keyframes buttonheader {
+        15%, 100%{
+            background-color: c.$darkblue;
+            color: c.$lightgreen
+        }
+    }
+
     nav{
         margin-top:5rem;
         border: 1px solid black;
