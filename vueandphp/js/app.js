@@ -21,6 +21,8 @@ const profile=Vue.createApp({
             headingtwo:"Whats new in my web portfolio?",
             image:'img/jospeh2025.webp',
             imagetwo:'img/josephoct.webp',
+            imagethree:'img/blog.webp',
+            imagefour:'img/blog2.webp',
             datecreate:"November 3, 2025"
 
         }
