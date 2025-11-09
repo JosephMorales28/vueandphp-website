@@ -23,7 +23,7 @@
     <script src="js/app.js" defer ></script>
     <title>Joseph Portfolio</title>
 </head>
-<body oncontextmenu= "return false;">
+<body oncontextmenu= "return false;" draggable="false">
    <header>
       <div id="logo">
          <picture>
