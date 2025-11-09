@@ -26,7 +26,7 @@
       <div id="logo">
          <picture>
             <source v-bind:srcset="logoImage" type="image/webp">
-               <img v-bind:src="logoImage" alt="logo" loading="lazy" fetchpriority="high" decoding="async">
+               <a href="index.php"><img v-bind:src="logoImage" alt="logo" loading="lazy" fetchpriority="high" decoding="async"></a>
          </picture>
          <h1>{{headerBlog}}</h1>
       </div>
@@ -35,6 +35,27 @@
          <div id="blog">
             <h1>{{blog}}</h1>
             <h2>{{headingtwo}}</h2>
+            
+            <div id="blog-creator">
+               <picture>
+                     <source srcset="img/josephoct.webp" type="image/webp">   
+                     <img v-bind:src="imagetwo" alt="joseph morales blog picture" loading="lazy" fetchpriority="high" decoding="async">
+               </picture>
+               <div id="blog-create">
+                  <h1>by. Joseph Morales</h1>
+                  <p>November 9,2025</p>
+               </div>
+            </div>
+            <div id="blog-content">
+               <figure>
+                  <picture>
+                     <source v-bind:srcset="imagefive" type="image/webp">
+                        <img v-bind:src="imagefive" alt="blog image" loading="lazy" fetchpriority="high" decoding="async">
+                  </picture>
+                  <figcaption>Image Credit: Joseph Morales</figcaption>
+               </figure>
+               <p>This is first Project page</p>
+            </div>
 
             <div id="blog-creator">
                <picture>
