@@ -44,15 +44,30 @@ const about=Vue.createApp({
 })
 about.mount("section");
 
-const section=Vue.createApp({
+const aside=Vue.createApp({
     data(){
         return{
-            heading:"Do you have a vision? lets bring it live on browser?",
-            paragraph:"Im always excited to collaborate on new and innovative projects. Whether you're starting form scratch refining an existing idea."
+            projects: [
+            {
+               title: 'Web Ecommerce',
+               image: 'img/sample.jpg',
+               technologies: ['HTML5', 'SCSS', 'PHP', 'Javascript'],
+               description:
+                  'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam placeat impedit quaerat adipisci, maiores minus eius iusto voluptatum eveniet laboriosam blanditiis nemo tenetur nisi numquam excepturi. Voluptatem, temporibus. Vero, asperiores?',
+            },
+        // Add more project objects here as needed
+            {
+               title: 'Dashboard',
+               image: 'img/sample.jpg',
+               technologies: [' HTML5 ', ' SCSS ', ' PHP ', ' Javascript '],
+               description:
+                  'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam placeat impedit quaerat adipisci, maiores minus eius iusto voluptatum eveniet laboriosam blanditiis nemo tenetur nisi numquam excepturi. Voluptatem, temporibus. Vero, asperiores?',
+            },
+            ],
         }
     }
 })
-section.mount("aside");
+aside.mount("aside");
 
 const footer=Vue.createApp({
     data(){
