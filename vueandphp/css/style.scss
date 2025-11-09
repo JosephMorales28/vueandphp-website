@@ -346,6 +346,7 @@ body{
                         border:1px solid c.$darkblue;
                     }
                     #list-project-title{
+                        padding:5px;
                         code{
                             margin-top:1rem;
                             font-size: .75rem;
@@ -353,6 +354,7 @@ body{
                             border:0 solid transparent; 
                             border-radius:5px;
                             padding:10px;
+                            
                         }
                     }
                     #list-project-info{
