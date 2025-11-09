@@ -95,18 +95,18 @@
       <div id="aside-projects">
          <h1>Recent Projects</h1>
          <ul>
-            <li id="list-projects">
+            <li v-for="(project, index) in projects" :key="index" id="list-projects">
                <div id="list-project-image">
                   <picture>
-                     <source srcset="img/sample.jpg" type="image/jpg">
-                        <img src="img/sample.jpg" alt="project image" loading="lazy" fetchpriority="high" decoding="async">
+                     <source v-bind:srcset="project.image" type="image/jpg">
+                        <img v-bind:src="project.image" alt="project image" loading="lazy" fetchpriority="high" decoding="async">
                   </picture>
                </div>
                <div id="list-project-title">
-                  <h1>Web Ecommerce</h1>
-                  <code>HTML5</code> <code>SCSS</code> <code>PHP</code> <code>Javascript</code>
+                  <h1>{{project.title}}</h1>
+                  <code v-for="(programminglang, i) in project.technologies" :key="i"> {{programminglang}} </code>
                   <div id="list-project-info">
-                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam placeat impedit quaerat adipisci, maiores minus eius iusto voluptatum eveniet laboriosam blanditiis nemo tenetur nisi numquam excepturi. Voluptatem, temporibus. Vero, asperiores?</p>
+                     <p>{{project.description}}</p>
                   </div>
                </div>
             </li>
