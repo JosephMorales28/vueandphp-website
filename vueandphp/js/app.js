@@ -23,6 +23,7 @@ const profile=Vue.createApp({
             imagetwo:'img/josephoct.webp',
             imagethree:'img/blog.webp',
             imagefour:'img/blog2.webp',
+            imagefive:'img/blog3.png',
             datecreate:"November 3, 2025"
 
         }
