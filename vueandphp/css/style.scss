@@ -330,17 +330,35 @@ body{
                 color:c.$darkblue;
             }
             ul{
+                margin-top: 2rem;
                 li{
                     list-style-type: none;
                     @include f.font-montserrat;
                     font-size: 1rem;
                     font-weight:400;
                     color:c.$darkblue;
+                    display: flex;
+                    justify-content: flex-start;
+                    gap:20px;
                     img{
                         width:400px;
                         height:200px;
                         border:1px solid c.$darkblue;
                     }
+                    #list-project-title{
+                        code{
+                            margin-top:1rem;
+                            font-size: .75rem;
+                            background-color: c.$lightgreen;
+                            border:0 solid transparent; 
+                            border-radius:5px;
+                            padding:10px;
+                        }
+                    }
+                    #list-project-info{
+                        margin-top: 2rem;
+                    }
+                    
                 }
             }
         }
