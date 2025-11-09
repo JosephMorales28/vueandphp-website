@@ -28,7 +28,7 @@
       <div id="logo">
          <picture>
             <source v-bind:srcset="logoImage" type="image/webp">
-               <img v-bind:src="logoImage" alt="logo" loading="lazy" fetchpriority="high" decoding="async">
+               <a href="index.php"><img v-bind:src="logoImage" alt="logo" loading="lazy" fetchpriority="high" decoding="async"></a>
          </picture>
          <h1>{{logoTitle}}</h1>
       </div>
@@ -91,6 +91,28 @@
       </div>
    </section>
    </main>
+   <aside>
+      <div id="aside-projects">
+         <h1>Recent Projects</h1>
+         <ul>
+            <li id="list-projects">
+               <div id="list-project-image">
+                  <picture>
+                     <source srcset="img/sample.jpg" type="image/jpg">
+                        <img src="img/sample.jpg" alt="project image" loading="lazy" fetchpriority="high" decoding="async">
+                  </picture>
+               </div>
+               <div id="list-project-title">
+                  <h1>Web Ecommerce</h1>
+                  <code>HTML5</code> <code>SCSS</code> <code>PHP</code> <code>Javascript</code>
+               </div>
+               <div id="list-project-onfo">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam placeat impedit quaerat adipisci, maiores minus eius iusto voluptatum eveniet laboriosam blanditiis nemo tenetur nisi numquam excepturi. Voluptatem, temporibus. Vero, asperiores?</p>
+               </div>
+            </li>
+         </ul>
+      </div>
+   </aside>
 </body>
 <footer role="contentinfo">
    <p>&copy; {{footerparagraph}}</p>
