@@ -105,9 +105,9 @@
                <div id="list-project-title">
                   <h1>Web Ecommerce</h1>
                   <code>HTML5</code> <code>SCSS</code> <code>PHP</code> <code>Javascript</code>
-               </div>
-               <div id="list-project-onfo">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam placeat impedit quaerat adipisci, maiores minus eius iusto voluptatum eveniet laboriosam blanditiis nemo tenetur nisi numquam excepturi. Voluptatem, temporibus. Vero, asperiores?</p>
+                  <div id="list-project-info">
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam placeat impedit quaerat adipisci, maiores minus eius iusto voluptatum eveniet laboriosam blanditiis nemo tenetur nisi numquam excepturi. Voluptatem, temporibus. Vero, asperiores?</p>
+                  </div>
                </div>
             </li>
          </ul>
